@@ -78,6 +78,8 @@ A separate prototype was developed using Python to improve chatbot intelligence:
 - The chatbot uses a structured dataset of predefined intents and responses.
 - The NLP model is experimental and not fully integrated into the PHP application.
 - The project was developed as part of a learning experience.
+- The original MySQL database (onlinebot.chatbot table) used by the PHP web application is not included in this repository.
+- A separate NLP prototype using a JSON dataset (intents.json) is included in the ml-model folder.
 
 ---
 
