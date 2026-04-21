@@ -18,7 +18,6 @@ The chatbot used a keyword-based matching system. All responses were manually cr
 Each database entry contained specific keywords along with a predefined response. When a user entered a message, the system searched for matching keywords and returned the corresponding answer.
 
 For example:
-
 > I have an AMD Radeon 6700 XT, what CPU goes well with this card?
 
 If relevant keywords were found, the chatbot would return a stored recommendation based on the database.
