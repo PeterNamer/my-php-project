@@ -1,0 +1,339 @@
+{"intents": [
+  {
+    "tag": "hello",
+    "patterns": [ "Hello", "Hi there", "Good morning",  "What's up"   ],
+    "responses": [  "Hey!",  "Hello", "Hi!", "Good morning!"    ],
+    "context": ""
+  },
+  { "tag": "noanswer",
+    "patterns": [],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand" ],
+    "context": [""]
+  },
+        
+  {
+    "tag": "job",
+    "patterns": ["What is your job", "What is your work"],
+    "responses": ["My job is to help you build a computer",
+      "You can ask me if you need any help with building a computer and the compatibility between different hardware"],
+    "context": ""
+  },
+  {
+    "tag": "name",
+    "patterns": ["What is your name"],
+    "responses": ["Rico" ],
+    "context": ""
+  },
+  {
+    "tag": "age",
+    "patterns": ["What is your age",  "How old are you",  "When were you born"],
+    "responses": ["I was born in 2023" ],
+    "context": ""
+  },
+  {
+    "tag": "feeling",
+    "patterns": ["How are you today", "How are you"],
+    "responses": ["I am feeling good, you?", "Very good and you?",  "Actually, I'm okay and you?"   ],
+    "context": ""
+  },
+  {
+    "tag": "good",
+    "patterns": ["I am good too", "I feel fine", "Good !", "Fine", "I am good", "I am great", "great" ],
+    "responses": [ "That is perfect!",
+      "So, everything's okay!" ],
+    "context": "feeling"
+  },
+  {
+    "tag": "bad",
+    "patterns": [ "I am feeling bad",  "No I am sad", "No"  ],
+    "responses": [  "I hope you will feel better !"    ],
+    "context": "feeling"
+  },
+  {
+    "tag": "actions",
+    "patterns": [  "What can you do","What can I ask you" ],
+    "responses": [ "I am a computer technician, you can ask me:specifics about a CPU,GPU,RAM,PSU or a motherboard, The best possible value for money choice for your computer." ],
+    "context": ""
+  },
+  {
+    "tag": "woman",
+    "patterns": [  "Are you a girl", "You are a woman" ],
+    "responses": [ "No,i am a bot,i do not have a specific gender beep beep boop" ],
+    "context": ""
+  },
+  {
+    "tag": "man",
+    "patterns": [ "Are you a man",  "Are you a boy" ],
+    "responses": [ "No,i am a bot,i do not have a specific gender beep beep boop" ],
+    "context": ""
+  },
+  {
+    "tag": "bot",
+    "patterns": [ "Are you a bot",  "Are you a robot" ],
+    "responses": [ "Yes,my job is to help you to fulfill the purpose of helping you with building/upgrading your pc" ],
+    "context": ""
+  },
+  {
+    "tag": "thanks",
+    "patterns": [ "Thank you",   "Thank you very much",  "thanks"  ],
+    "responses": [  "I only do my job️", "No problem!"  ],
+    "context": ""
+  },
+  {
+    "tag": "goodbye",
+    "patterns": [   "Goodbye",  "Good afternoon",   "Bye"   ],
+    "responses": [  "Goodbye!",  "See you soon!" ],
+    "context": ""
+  },
+  {
+    "tag": "city",
+    "patterns": [  "Where do you live" ],
+    "responses": [  "I live in a server located in Greece!"
+    ],
+    "context": ""  },
+  {
+    "tag": "action",
+    "patterns": [  "What are you doing"],
+    "responses": [  "Actually, I'm chatting with you" ],
+    "context": ""
+  },
+  {
+    "tag": "wait",
+    "patterns": [ "Can you wait 2 minutes",  "Please wait", "Wait 2 secs please", "give me a minute please" ],
+    "responses": [ "Sure! I wait."  ],
+    "context": ""
+  },
+  {
+    "tag": "still there",
+    "patterns": [  "Are you still there?", "Are you here?"   ],
+    "responses": [ "Of course! Always at your service." ],
+    "context": ""
+  },
+  {
+    "tag": "help",
+    "patterns": [ "i need help",  "Please help me"],
+    "responses": [ "how can i help you today?","what do you need?"  ],
+    "context": ""
+  },
+  {
+    "tag": "cpu_info",
+    "patterns": ["Tell me about CPUs", "CPU specifications", "Best CPUs"],
+    "responses": ["CPUs, or Central Processing Units, are the brains of your computer. They handle instructions and calculations.",
+                  "Some popular CPUs include Intel Core i9-9900K and AMD Ryzen 7 5800X."],
+    "context": ""
+ },
+ {
+    "tag": "gpu_info",
+    "patterns": ["GPU recommendations", "Graphics card details", "Best GPUs"],
+    "responses": ["GPUs, or Graphics Processing Units, are crucial for gaming and graphics-intensive tasks.",
+                  "Consider options like NVIDIA GeForce RTX 3080 or AMD Radeon RX 6800 XT."],
+    "context": ""
+ },
+ {
+    "tag": "ram_info",
+    "patterns": ["Tell me about RAM", "RAM specifications", "Best RAM for gaming"],
+    "responses": ["RAM, or Random Access Memory, is used for temporary data storage. Faster RAM improves overall performance.",
+                  "Common RAM types include DDR4. Consider options like Corsair Vengeance LPX."],
+    "context": ""
+ },
+ {
+    "tag": "motherboard_info",
+    "patterns": ["Motherboard recommendations", "Best motherboards", "Motherboard details"],
+    "responses": ["The motherboard connects all components. Choose one compatible with your CPU and other hardware.",
+                  "Options include ASUS ROG Strix B550-F and MSI MPG B450 Tomahawk."],
+    "context": ""
+ },
+ {
+    "tag": "psu_info",
+    "patterns": ["Power supply details", "PSU recommendations", "Best power supplies"],
+    "responses": ["A reliable power supply is crucial. Choose one with sufficient wattage and efficiency.",
+                  "Consider options like EVGA SuperNOVA 750 G5 or Corsair RM850x."],
+    "context": ""
+ },
+ {
+  "tag": "storage_info",
+  "patterns": ["Tell me about storage options", "Best storage for gaming", "Hard drive vs SSD"],
+  "responses": ["Storage is crucial for data and system performance. SSDs are faster but more expensive than HDDs.",
+                "Consider options like Samsung 970 EVO for SSDs and Seagate Barracuda for HDDs."],
+  "context": ""
+},
+{
+  "tag": "build_recommendation",
+  "patterns": ["Recommend a gaming PC build", "Build me a computer", "Best budget PC components"],
+  "responses": ["Sure! I can help you build a gaming PC. What's your budget and specific requirements?",
+                "For a gaming PC, it's essential to balance components for optimal performance. Let's discuss your preferences."],
+  "context": ""
+},
+{
+  "tag": "compatibility_check",
+  "patterns": ["Check compatibility of CPU and motherboard", "Are these components compatible"],
+  "responses": ["To ensure compatibility, check the motherboard's socket type and supported CPU generations.",
+                "I can help you verify compatibility. Please provide the CPU and motherboard models."],
+  "context": ""
+},
+{
+  "tag": "budget_advice",
+  "patterns": ["I have a budget of $XXX, what components should I prioritize?", "Budget-friendly PC build"],
+  "responses": ["Let's optimize your build for your budget. Are there specific components you prioritize, such as CPU or GPU?",
+                "We can create a cost-effective build. Let me know your preferences and budget constraints."],
+  "context": ""
+},
+{
+  "tag": "brand_recommendations",
+  "patterns": ["Recommend me the best CPU brand", "Which GPU brand is better"],
+  "responses": ["Both Intel and AMD offer great CPUs. It depends on your specific needs and budget.",
+                "NVIDIA and AMD are popular GPU brands. Consider factors like performance, features, and budget."],
+  "context": ""
+},
+{
+  "tag": "upgrade_advice",
+  "patterns": ["How can I upgrade my PC?", "Upgrade recommendations for an old PC"],
+  "responses": ["Upgrading components like RAM or adding an SSD can enhance performance.",
+                "To upgrade, identify the bottleneck. Let me know your current specs, and we can plan the upgrades."],
+  "context": ""
+},
+{
+  "tag": "component_comparison",
+  "patterns": ["Compare Intel Core i7 vs AMD Ryzen 7", "NVIDIA vs AMD graphics cards"],
+  "responses": ["Both Intel Core i7 and AMD Ryzen 7 are powerful. Consider factors like price and specific use cases.",
+                "NVIDIA and AMD GPUs have strengths in different areas. It depends on your preferences and needs."],
+  "context": ""
+},
+{
+  "tag": "operating_systems",
+  "patterns": ["Tell me about operating systems", "Best OS for gaming", "Windows vs. Linux"],
+  "responses": [
+    "Operating systems, like Windows and Linux, are crucial for running your PC. Windows is popular for gaming due to software compatibility, while Linux offers customization and stability.",
+    "Choosing an operating system depends on your needs. Windows is user-friendly, while Linux provides more control. Consider your priorities for the best fit."
+  ],
+  "context": ""
+},
+{
+  "tag": "cooling_solutions",
+  "patterns": ["Tell me about cooling solutions", "Best CPU coolers", "Air vs. Liquid cooling"],
+  "responses": [
+    "Effective cooling is vital for your PC's performance. Popular CPU coolers include Noctua NH-D15 for air cooling and Corsair H100i for liquid cooling.",
+    "When choosing a cooling solution, consider your budget and performance requirements. Air coolers are quieter, while liquid coolers are efficient for overclocking."
+  ],
+  "context": ""
+},
+{
+  "tag": "upgrading_components",
+  "patterns": ["How can I upgrade my PC?", "Upgrade recommendations for an old PC"],
+  "responses": [
+    "Upgrading components like RAM or adding an SSD can significantly enhance performance. Identify the bottleneck in your system, and I can help you plan the upgrades.",
+    "To upgrade your PC, consider improving specific components based on your usage. Let me know your current specs, and we can discuss the best upgrade options."
+  ],
+  "context": ""
+},
+{
+  "tag": "software_recommendations",
+  "patterns": ["Recommend essential software for a new PC", "Best antivirus programs", "Useful utilities"],
+  "responses": [
+    "For a new PC, essential software includes antivirus programs like Bitdefender or utilities like CCleaner for system maintenance.",
+    "Protect your PC with reliable antivirus software and optimize performance with utilities like CCleaner. Regular updates and backups are crucial for a smooth experience."
+  ],
+  "context": ""
+},
+{
+  "tag": "gaming_peripherals",
+  "patterns": ["Recommend gaming peripherals", "Best gaming mouse and keyboard", "Gaming monitor suggestions"],
+  "responses": [
+    "Enhance your gaming experience with quality peripherals. Popular choices include Logitech G Pro X keyboard, G Pro Wireless mouse, and ASUS ROG Swift gaming monitors.",
+    "Investing in gaming peripherals can elevate your gaming setup. Look for features like mechanical switches, high DPI for mice, and low response time for monitors."
+  ],
+  "context": ""
+},
+{
+  "tag": "networking",
+  "patterns": ["Tell me about networking", "Best Wi-Fi routers", "Wired vs. Wireless connections"],
+  "responses": [
+    "Networking is crucial for connecting your devices. Popular Wi-Fi routers include ASUS RT-AX88U for high-speed wireless connectivity.",
+    "When considering networking, weigh the benefits of wired and wireless connections. Wired connections offer stability, while wireless connections provide convenience."
+  ],
+  "context": ""
+},
+{
+  "tag": "driver_updates",
+  "patterns": ["How to update drivers?", "Importance of driver updates", "Best practices for driver maintenance"],
+  "responses": [
+    "Regularly updating drivers is essential for optimal performance. You can manually update drivers through the device manager or use software like Driver Booster.",
+    "Driver updates address compatibility issues and enhance system stability. Consider setting up automatic updates or regularly checking the manufacturer's website for the latest drivers."
+  ],
+  "context": ""
+},
+{
+  "tag": "virtualization",
+  "patterns": ["Tell me about virtualization", "Best virtualization software", "Uses of virtual machines"],
+  "responses": [
+    "Virtualization allows running multiple operating systems on a single machine. Popular virtualization software includes VMware and VirtualBox.",
+    "Virtual machines are useful for testing software, running multiple OS environments, and server management. Consider your specific needs when exploring virtualization."
+  ],
+  "context": ""
+},
+{
+  "tag": "data_backup",
+  "patterns": ["How to backup data?", "Importance of data backups", "Best backup solutions"],
+  "responses": [
+    "Regular data backups are crucial for preventing data loss. Use tools like Windows Backup or third-party solutions like Acronis True Image.",
+    "Data backups protect against hardware failures and accidental deletions. Consider using external drives, cloud storage, or dedicated backup software for a reliable backup strategy."
+  ],
+  "context": ""
+},
+{
+  "tag": "troubleshooting",
+  "patterns": ["How to troubleshoot common PC issues", "Debugging techniques", "Common hardware problems"],
+  "responses": [
+    "Troubleshooting is crucial for resolving common PC issues. Identify error messages, check event logs, and update drivers for effective problem-solving.",
+    "When troubleshooting, isolate the issue by testing components individually. Consult online forums, and don't hesitate to reach out for assistance when faced with challenging problems."
+  ],
+  "context": ""
+},
+{
+  "tag": "BIOS_Settings",
+  "patterns": ["Tell me about BIOS settings", "How to access BIOS", "Optimizing BIOS for performance"],
+  "responses": [
+    "The BIOS (Basic Input/Output System) stores firmware settings for your PC. Access it by pressing a specific key during startup, often Del or F2.",
+    "In the BIOS, you can optimize settings for performance, configure boot order, and enable/disable hardware features. Be cautious and refer to your motherboard manual for guidance."
+  ],
+  "context": ""
+},
+{
+  "tag": "overclocking",
+  "patterns": ["How to overclock a CPU", "Benefits of overclocking", "Overclocking safety tips"],
+  "responses": [
+    "Overclocking involves increasing a component's clock rate for better performance. Use tools like MSI Afterburner for GPU overclocking and BIOS/UEFI for CPU overclocking.",
+    "Benefits of overclocking include improved performance in demanding tasks. Ensure proper cooling, monitor temperatures, and gradually increase clock speeds for a safe overclocking experience."
+  ],
+  "context": ""
+},
+{
+  "tag": "RGB_Lighting",
+  "patterns": ["Tell me about RGB lighting", "Best RGB components", "RGB customization tips"],
+  "responses": [
+    "RGB lighting adds a vibrant aesthetic to your setup. Popular components with RGB include Corsair's RGB RAM and NZXT's RGB fans.",
+    "Customize RGB lighting through software like Corsair iCUE or ASUS Aura Sync. Consider color schemes and effects to create a visually appealing setup."
+  ],
+  "context": ""
+},
+{
+  "tag": "PC_Cleaning",
+  "patterns": ["How to clean my PC", "PC maintenance tips", "Cleaning hardware components"],
+  "responses": [
+    "Regular PC cleaning is essential for maintaining optimal performance. Use compressed air to clean dust from fans and components.",
+    "When cleaning, power off your PC and use anti-static tools. Clean the dust filters, vents, and fan blades. Ensure proper ventilation for cooling components."
+  ],
+  "context": ""
+},
+{
+  "tag": "privacy_security",
+  "patterns": ["How to enhance PC security", "Best practices for online privacy", "Protecting against malware"],
+  "responses": [
+    "Enhance PC security by using strong, unique passwords and enabling two-factor authentication. Regularly update your antivirus software for protection against malware.",
+    "Protect your online privacy by using a VPN and being cautious about sharing personal information. Regularly update your operating system and software for security patches."
+  ],
+  "context": ""
+}
+
+   ]
+}
